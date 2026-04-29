@@ -112,7 +112,7 @@ export async function POST(request) {
             userID = users[0].userID;
         }
 
-   //add the appliance 
+   //add the appliance  in sql
         await pool.query(
             `INSERT INTO appliances 
              (SerialNumber, ApplianceType, Brand, ModelNumber, PurchaseDate, WarrantyDate, CostOfAppliance, UserID) 
